@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
     entry: "./src/index.jsx",
@@ -19,7 +20,7 @@ module.exports = {
         }
     },
     plugins: [
-        new webpack.ProviderPlugin({
+        new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
