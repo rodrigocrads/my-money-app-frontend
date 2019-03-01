@@ -74,5 +74,5 @@ const mapStateToProps = state => ({
     credits: selector(state, 'credits'), 
     debts: selector(state, 'debts')
 });
-const mapDispatchToProps = dispatch => bindActionCreators({init}, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators({ init }, dispatch);
 export default connect(mapStateToProps, mapDispatchToProps)(BillingCycleForm);
